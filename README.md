@@ -1,4 +1,4 @@
-# maSigPro_Clean
+# maSigProClean
 
 Cleaner and custom Version of MaSigPro
 
