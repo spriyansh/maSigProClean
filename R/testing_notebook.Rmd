@@ -1,0 +1,29 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+## Load the function to be tested
+```{r}
+source("make.design.matrix.R")
+```
+
+## Load the input file
+```{r}
+scExpDesign <- readRDS("../data/single_cell_design_file.RDS")
+
+head(scExpDesign)
+colnames(scExpDesign) <- c("Time", "Replicate", "LinOne", "LinTwo")
+```
+
+## Test output
+```{r}
+source("make.design.matrix.R")
+exp.design.matrix <- make.design.matrix(scExpDesign, degree = 2, 
+                                        repl.col = 2)
+
+exp.design.matrix <- make.design.matrix(scExpDesign[,-4], degree = 3, 
+                                        repl.col = 2)
+
+
+```
