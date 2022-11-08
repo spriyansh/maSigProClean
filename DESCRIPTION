@@ -1,0 +1,20 @@
+Package: maSigPro
+Type: Package
+Title: Significant Gene Expression Profile Differences in Time Course
+        Gene Expression Data
+Version: 1.71.0
+Author: Ana Conesa and Maria Jose Nueda 
+Maintainer: Maria Jose Nueda <mj.nueda@ua.es>
+Description: maSigPro is a regression based approach to find genes for which there are significant gene expression profile differences between experimental groups in time course microarray and RNA-Seq experiments.
+Depends: R (>= 2.3.1)
+Imports: Biobase, graphics, grDevices, venn, mclust, stats, MASS
+LazyLoad: yes
+License: GPL (>= 2)
+biocViews: Microarray, RNA-Seq, Differential Expression, TimeCourse
+git_url: https://git.bioconductor.org/packages/maSigPro
+git_branch: master
+git_last_commit: 62a0aeb
+git_last_commit_date: 2022-11-01
+Date/Publication: 2022-11-01
+NeedsCompilation: no
+Packaged: 2022-11-01 22:17:33 UTC; biocbuild
