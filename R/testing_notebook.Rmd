@@ -14,16 +14,22 @@ scExpDesign <- readRDS("../data/single_cell_design_file.RDS")
 
 head(scExpDesign)
 colnames(scExpDesign) <- c("Time", "Replicate", "LinOne", "LinTwo")
+
+meta.mtx <- readRDS("../data/metagene.mtx")
 ```
 
 ## Test output
 ```{r}
 source("make.design.matrix.R")
-exp.design.matrix <- make.design.matrix(scExpDesign, degree = 2, 
+exp.design.matrix <- make.design.matrix(scExpDesign, degree = 3, 
                                         repl.col = 2)
+```
 
-exp.design.matrix <- make.design.matrix(scExpDesign[,-4], degree = 3, 
-                                        repl.col = 2)
+```{r}
+source("p.vector.R")
+library(MASS) 
 
+metagene.mtx <-abs(meta.mtx)
 
+fit <- p.vector(metagene.mtx, exp.design.matrix, Q = 0.05, MT.adjust = "BH", min.obs = 10, counts = T)
 ```
