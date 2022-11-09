@@ -1771,7 +1771,7 @@ display: none;
 
 head(scExpDesign)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6NCwic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFBMzFTc1U3RE1CQjEwaVRRUUFzU0F4SUxFMk1pMFRLd1VTc0lMMHlWa2Jvd21OU0VpTlNKMGxUd0svQTFmQkpmVURnN2RpbFc0S3pUM2IzelBkL1pubDdQeHVFc1JBajFrT2M2cU9lRGkvdzdlaE5kSWtBZ2NKQ0grdEsrd3FZamNEelFJV2d3T1VGS052YnNUY3I3Wkcrc0JHbVpuRzdpZ2F3RHJvOVdYZUIwN3RVaHlOMDN2TWlTcTgvdWVBdFhkUjE0Wi93anZ3YjBCVnZ3SlRpSGFzZ1c5R2krNE5ydlQzbFY1Q2xyRExCN213dk9NbjV1eFNPTHVWK1hML0UyZTZBVHgxbGRycXFMQ0dPY0pKUWtHSk9FWUVLNzA0U0NnVDMvcFFrNDNXbWFBRG1GOVdlYVFnZEpWNW9RYUUwMlJ6RzJMeTB0Mk5LTVpjQnd6aG9XUDlZd01VUnJxMlNuckpxOEZGRGt5dS9rVzhWT2JRRUhLeUh2Ymg2bFR5dnhISTNrQWUyWFVUclFOdGp5dmZaSTkwdFQrWm9xNENLREp6SzlGK3lCRnpvWXdodXBKNHFyT2hlTm1RVFFaZHlVRFRQN3dyUXNES0ptUSt0dis5UDArRVVEQUFBPSJ9 -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6NCwic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFBMzFTd1U3RE1BeE51N2JRd2dZU0J5UXVuRGkyRWd3SmJpd3FJaGRPVTVCMjRSQzZNQ3E2dE9vNndhL0ExL0JKZk1IQVNaTXhvb0lqeS9aei9HSW5HVjlQaHRFa1FnajFrT2M2cU9lRGkvdzdlaE5mSWtBZ2NKQ0hRbWxmWWRNQk9CN29BRFFZSFNFbGEzdnlKdVY5dEROVWdyU01qdGR4WDlZQjEwZXJMbkE2OStvUTVPNGFYbVRKMVdkM3ZJR3J1ZzY4TS82Ulh3UDZnczM1QXB4OU5XUUxlalNmYysySFkxNFZlY1lhQTJ6ZjVvS3pHVCsxNGpPTE9hekxsMlNUUGRDSncxbGRMcXZ6R0dPY3BwU2tHSk9VWUVLNzA0U0NnVDMvcFFrNDNXbWFBam1GOVdlYVFnZHBWNW9RYUUwMlJ6RzJMeTByMk1LTVpjQm95aHFXUE5Zd01VUXJxMlNyckpxOEZGRGt5dS9rVzhWT2JRRjdTeUh2YmhwblQwdnhIRi9JQTlvdm83U3ZiYkRoZSsyUjdwZW04alZWd01VTW5zajBYckFIWHVoZ0FHK2tuaWlwNmx3MFpoSkFGMGxUTnN6c2k3S3lNSWlhRGEyK0FSQi9vODFGQXdBQSJ9 -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Time"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Replicate"],"name":[2],"type":["int"],"align":["right"]},{"label":["Lineage1"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Lineage2"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"6.5","2":"448","3":"0","4":"1","_rn_":"group4-AAACCTGCAAGCGAGT"},{"1":"6.5","2":"448","3":"0","4":"1","_rn_":"group4-AAACCTGGTACCCAAT"},{"1":"10.8","2":"632","3":"1","4":"0","_rn_":"group4-AAACCTGGTACCGCTG"},{"1":"3.4","2":"349","3":"0","4":"1","_rn_":"group4-AAACCTGTCAGCTCTC"},{"1":"0.0","2":"1","3":"1","4":"0","_rn_":"group4-AAACCTGTCATTGCCC"},{"1":"7.8","2":"524","3":"1","4":"0","_rn_":"group4-AAACGGGCACAAGTAA"}],"options":{"columns":{"min":{},"max":[10],"total":[4]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
@@ -1799,35 +1799,69 @@ exp.design.matrix &lt;- make.design.matrix(scExpDesign, degree = 3,
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc291cmNlKFwicC52ZWN0b3IuUlwiKVxubGlicmFyeShNQVNTKSBcblxubWV0YWdlbmUubXR4IDwtYWJzKG1ldGEubXR4KVxuXG5maXQgPC0gcC52ZWN0b3IobWV0YWdlbmUubXR4LCBleHAuZGVzaWduLm1hdHJpeCwgUSA9IDAuMDUsIE1ULmFkanVzdCA9IFwiQkhcIiwgbWluLm9icyA9IDEwLCBjb3VudHMgPSBUKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc291cmNlKFwicC52ZWN0b3IuUlwiKVxubGlicmFyeShNQVNTKSBcblxubWV0YWdlbmUubXR4IDwtYWJzKG1ldGEubXR4KVxuXG5maXQgPC0gcC52ZWN0b3IobWV0YWdlbmUubXR4LCBleHAuZGVzaWduLm1hdHJpeCwgUSA9IDAuMDUsIE1ULmFkanVzdCA9IFwiQkhcIiwgbWluLm9icyA9IDEwLCBjb3VudHMgPSBULCBmYW1pbHkgPSBuZWdhdGl2ZS5iaW5vbWlhbCgxMCkpXG5gYGAifQ== -->
 <pre class="r"><code>source(&quot;p.vector.R&quot;)
 library(MASS) 
 
 metagene.mtx &lt;-abs(meta.mtx)
 
-fit &lt;- p.vector(metagene.mtx, exp.design.matrix, Q = 0.05, MT.adjust = &quot;BH&quot;, min.obs = 10, counts = T)</code></pre>
+fit &lt;- p.vector(metagene.mtx, exp.design.matrix, Q = 0.05, MT.adjust = &quot;BH&quot;, min.obs = 10, counts = T, family = negative.binomial(10))</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOiAgZ2xtKGZvcm11bGEgPSB5IH4gMSwgZmFtaWx5ID0gZmFtaWx5LCBlcHNpbG9uID0gZXBzaWxvbilcblxuQ29lZmZpY2llbnRzOlxuKEludGVyY2VwdCkgIFxuICAgICAwLjU1MzMgIFxuXG5EZWdyZWVzIG9mIEZyZWVkb206IDMwMDQgVG90YWwgKGkuZS4gTnVsbCk7ICAzMDA0IFJlc2lkdWFsXG5OdWxsIERldmlhbmNlOlx0ICAgIDI5NzEgXG5SZXNpZHVhbCBEZXZpYW5jZTogMjk3MSBcdEFJQzogOTg4OFxuWzFdIDI5NzEuNDEzXG4ifQ== -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc291cmNlKFwiVC5maXQuUlwiKVxubGlicmFyeShNQVNTKSBcblxuXG50c3RlcCA8LSBULmZpdChmaXQsXG4gICAgICAgICAgICAgICBkZXNpZ24gPSBmaXQkZGlzLFxuICAgICAgICAgICAgICAgc3RlcC5tZXRob2QgPSBcImJhY2t3YXJkXCIsXG4gICAgICAgICAgICAgICBhbGZhID0gZml0JFEsIG1pbi5vYnMgPSBmaXQkbWluLm9icyxcbiAgICAgICAgICAgICAgIG52YXIuY29ycmVjdGlvbiA9IEYsIGl0ZW0gPSBcImdlbmVcIiwgZmFtaWx5ID0gZml0JGZhbWlseSlcbmBgYCJ9 -->
+<pre class="r"><code>source(&quot;T.fit.R&quot;)
+library(MASS) 
+
+
+tstep &lt;- T.fit(fit,
+               design = fit$dis,
+               step.method = &quot;backward&quot;,
+               alfa = fit$Q, min.obs = fit$min.obs,
+               nvar.correction = F, item = &quot;gene&quot;, family = fit$family)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxuZ2xtKGZvcm11bGEgPSB5IH4gLiwgZmFtaWx5ID0gZmFtaWx5LCBkYXRhID0gZCwgZXBzaWxvbiA9IGVwc2lsb24pXG5cbkRldmlhbmNlIFJlc2lkdWFsczogXG4gICAgTWluICAgICAgIDFRICAgTWVkaWFuICAgICAgIDNRICAgICAgTWF4ICBcbi0xLjk3MjUgIC0wLjcyOTkgIC0wLjMwODkgICAwLjA3MjYgICA0LjU3MTkgIFxuXG5Db2VmZmljaWVudHM6XG4gICAgICAgICAgICAgICAgIEVzdGltYXRlIFN0ZC4gRXJyb3IgdCB2YWx1ZSBQcig+fHR8KSAgICBcbihJbnRlcmNlcHQpICAgICAwLjc3ODI0NzUgIDAuMDMwMTA5MiAgMjUuODQ3ICAgPDJlLTE2ICoqKlxuTGluVHdvdnNMaW5PbmUgIDAuMDIxNzMyNiAgMC4wNzU2ODkwICAgMC4yODcgICAgMC43NzQgICAgXG5UaW1lICAgICAgICAgICAtMC4wODAzMTI5ICAwLjA1MDA5ODIgIC0xLjYwMyAgICAwLjEwOSAgICBcblRpbWV4TGluVHdvICAgICAwLjA2ODM3OTggIDAuMDc2OTc3MiAgIDAuODg4ICAgIDAuMzc0ICAgIFxuVGltZTIgICAgICAgICAgLTAuMDA0NDk4MiAgMC4wMTI3MTA2ICAtMC4zNTQgICAgMC43MjMgICAgXG5UaW1lMnhMaW5Ud28gICAtMC4wMDM1MzQwICAwLjAxNzE2NDkgIC0wLjIwNiAgICAwLjgzNyAgICBcblRpbWUzICAgICAgICAgICAwLjAwMDc0NjQgIDAuMDAwODA1MCAgIDAuOTI3ICAgIDAuMzU0ICAgIFxuVGltZTN4TGluVHdvICAgLTAuMDAwMjQ4MyAgMC4wMDA5OTgwICAtMC4yNDkgICAgMC44MDMgICAgXG4tLS1cblNpZ25pZi4gY29kZXM6ICAwIOKAmCoqKuKAmSAwLjAwMSDigJgqKuKAmSAwLjAxIOKAmCrigJkgMC4wNSDigJgu4oCZIDAuMSDigJgg4oCZIDFcblxuKERpc3BlcnNpb24gcGFyYW1ldGVyIGZvciBOZWdhdGl2ZSBCaW5vbWlhbCgxMCkgZmFtaWx5IHRha2VuIHRvIGJlIDEuMTQ0MTU2KVxuXG4gICAgTnVsbCBkZXZpYW5jZTogMjk3MS40ICBvbiAzMDA0ICBkZWdyZWVzIG9mIGZyZWVkb21cblJlc2lkdWFsIGRldmlhbmNlOiAyNzc2LjAgIG9uIDI5OTcgIGRlZ3JlZXMgb2YgZnJlZWRvbVxuQUlDOiA5NzA2LjhcblxuTnVtYmVyIG9mIEZpc2hlciBTY29yaW5nIGl0ZXJhdGlvbnM6IDRcbiJ9 -->
 <pre><code>
-Call:  glm(formula = y ~ 1, family = family, epsilon = epsilon)
+Call:
+glm(formula = y ~ ., family = family, data = d, epsilon = epsilon)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.9725  -0.7299  -0.3089   0.0726   4.5719  
 
 Coefficients:
-(Intercept)  
-     0.5533  
+                 Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)     0.7782475  0.0301092  25.847   &lt;2e-16 ***
+LinTwovsLinOne  0.0217326  0.0756890   0.287    0.774    
+Time           -0.0803129  0.0500982  -1.603    0.109    
+TimexLinTwo     0.0683798  0.0769772   0.888    0.374    
+Time2          -0.0044982  0.0127106  -0.354    0.723    
+Time2xLinTwo   -0.0035340  0.0171649  -0.206    0.837    
+Time3           0.0007464  0.0008050   0.927    0.354    
+Time3xLinTwo   -0.0002483  0.0009980  -0.249    0.803    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Degrees of Freedom: 3004 Total (i.e. Null);  3004 Residual
-Null Deviance:      2971 
-Residual Deviance: 2971     AIC: 9888
-[1] 2971.413</code></pre>
+(Dispersion parameter for Negative Binomial(10) family taken to be 1.144156)
+
+    Null deviance: 2971.4  on 3004  degrees of freedom
+Residual deviance: 2776.0  on 2997  degrees of freedom
+AIC: 9706.8
+
+Number of Fisher Scoring iterations: 4</code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3IgaW4gcC52ZWN0b3IobWV0YWdlbmUubXR4LCBleHAuZGVzaWduLm1hdHJpeCwgUSA9IDAuMDUsIE1ULmFkanVzdCA9IFwiQkhcIiwgIDogXG4gIFxuIn0= -->
-<pre><code>Error in p.vector(metagene.mtx, exp.design.matrix, Q = 0.05, MT.adjust = &quot;BH&quot;,  : 
+<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3IgaW4gc3RlcGJhY2soeSA9IHksIGQgPSBkaXMsIGFsZmEgPSBhbGZhLCBmYW1pbHkgPSBmYW1pbHksIGVwc2lsb24gPSBlcHNpbG9uKSA6IFxuICBcbiJ9 -->
+<pre><code>Error in stepback(y = y, d = dis, alfa = alfa, family = family, epsilon = epsilon) : 
   </code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKIyMgTG9hZCB0aGUgZnVuY3Rpb24gdG8gYmUgdGVzdGVkCmBgYHtyfQpzb3VyY2UoIm1ha2UuZGVzaWduLm1hdHJpeC5SIikKYGBgCgojIyBMb2FkIHRoZSBpbnB1dCBmaWxlCmBgYHtyfQpzY0V4cERlc2lnbiA8LSByZWFkUkRTKCIuLi9kYXRhL3NpbmdsZV9jZWxsX2Rlc2lnbl9maWxlLlJEUyIpCgpoZWFkKHNjRXhwRGVzaWduKQpjb2xuYW1lcyhzY0V4cERlc2lnbikgPC0gYygiVGltZSIsICJSZXBsaWNhdGUiLCAiTGluT25lIiwgIkxpblR3byIpCgptZXRhLm10eCA8LSByZWFkUkRTKCIuLi9kYXRhL21ldGFnZW5lLm10eCIpCmBgYAoKIyMgVGVzdCBvdXRwdXQKYGBge3J9CnNvdXJjZSgibWFrZS5kZXNpZ24ubWF0cml4LlIiKQpleHAuZGVzaWduLm1hdHJpeCA8LSBtYWtlLmRlc2lnbi5tYXRyaXgoc2NFeHBEZXNpZ24sIGRlZ3JlZSA9IDMsIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcmVwbC5jb2wgPSAyKQpgYGAKCmBgYHtyfQpzb3VyY2UoInAudmVjdG9yLlIiKQpsaWJyYXJ5KE1BU1MpIAoKbWV0YWdlbmUubXR4IDwtYWJzKG1ldGEubXR4KQoKZml0IDwtIHAudmVjdG9yKG1ldGFnZW5lLm10eCwgZXhwLmRlc2lnbi5tYXRyaXgsIFEgPSAwLjA1LCBNVC5hZGp1c3QgPSAiQkgiLCBtaW4ub2JzID0gMTAsIGNvdW50cyA9IFQsIGZhbWlseSA9IG5lZ2F0aXZlLmJpbm9taWFsKDEwKSkKYGBg</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKIyMgTG9hZCB0aGUgZnVuY3Rpb24gdG8gYmUgdGVzdGVkCmBgYHtyfQpzb3VyY2UoIm1ha2UuZGVzaWduLm1hdHJpeC5SIikKYGBgCgojIyBMb2FkIHRoZSBpbnB1dCBmaWxlCmBgYHtyfQpzY0V4cERlc2lnbiA8LSByZWFkUkRTKCIuLi9kYXRhL3NpbmdsZV9jZWxsX2Rlc2lnbl9maWxlLlJEUyIpCgpoZWFkKHNjRXhwRGVzaWduKQpjb2xuYW1lcyhzY0V4cERlc2lnbikgPC0gYygiVGltZSIsICJSZXBsaWNhdGUiLCAiTGluT25lIiwgIkxpblR3byIpCgptZXRhLm10eCA8LSByZWFkUkRTKCIuLi9kYXRhL21ldGFnZW5lLm10eCIpCmBgYAoKIyMgVGVzdCBvdXRwdXQKYGBge3J9CnNvdXJjZSgibWFrZS5kZXNpZ24ubWF0cml4LlIiKQpleHAuZGVzaWduLm1hdHJpeCA8LSBtYWtlLmRlc2lnbi5tYXRyaXgoc2NFeHBEZXNpZ24sIGRlZ3JlZSA9IDMsIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcmVwbC5jb2wgPSAyKQpgYGAKCmBgYHtyfQpzb3VyY2UoInAudmVjdG9yLlIiKQpsaWJyYXJ5KE1BU1MpIAoKbWV0YWdlbmUubXR4IDwtYWJzKG1ldGEubXR4KQoKZml0IDwtIHAudmVjdG9yKG1ldGFnZW5lLm10eCwgZXhwLmRlc2lnbi5tYXRyaXgsIFEgPSAwLjA1LCBNVC5hZGp1c3QgPSAiQkgiLCBtaW4ub2JzID0gMTAsIGNvdW50cyA9IFQsIGZhbWlseSA9IG5lZ2F0aXZlLmJpbm9taWFsKDEwKSkKYGBgCgoKYGBge3J9CnNvdXJjZSgiVC5maXQuUiIpCmxpYnJhcnkoTUFTUykgCgoKdHN0ZXAgPC0gVC5maXQoZml0LAogICAgICAgICAgICAgICBkZXNpZ24gPSBmaXQkZGlzLAogICAgICAgICAgICAgICBzdGVwLm1ldGhvZCA9ICJiYWNrd2FyZCIsCiAgICAgICAgICAgICAgIGFsZmEgPSBmaXQkUSwgbWluLm9icyA9IGZpdCRtaW4ub2JzLAogICAgICAgICAgICAgICBudmFyLmNvcnJlY3Rpb24gPSBGLCBpdGVtID0gImdlbmUiLCBmYW1pbHkgPSBmaXQkZmFtaWx5KQoKYGBgCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgo=</div>
 
 
 

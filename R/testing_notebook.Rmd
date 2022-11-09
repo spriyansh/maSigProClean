@@ -33,3 +33,60 @@ metagene.mtx <-abs(meta.mtx)
 
 fit <- p.vector(metagene.mtx, exp.design.matrix, Q = 0.05, MT.adjust = "BH", min.obs = 10, counts = T, family = negative.binomial(10))
 ```
+
+
+```{r}
+source("T.fit.R")
+library(MASS) 
+
+
+tstep <- T.fit(fit,
+               design = fit$dis,
+               step.method = "backward",
+               alfa = fit$Q, min.obs = fit$min.obs,
+               nvar.correction = F, item = "gene", family = fit$family)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

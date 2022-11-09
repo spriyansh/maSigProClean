@@ -1,8 +1,30 @@
-"stepfor" <- function(y = y, d = d, alfa = 0.05, family = gaussian(), epsilon = 1e-05) {
+# Integrated function
+
+"stepfor" <- function(y = y, # Single gene vector with rowname
+                      d = d, # Design file
+                      alfa = 0.05, # Significant level #---Bug--fix needed
+                      family = gaussian(), # Family #---Bug--fix needed
+                      epsilon = 1e-05 # Epsilon
+) {
+
+  # Null variable Invoke
+  # p-value
   pval <- NULL
+
+  # Design file
   design <- NULL
+  
+  # Invoke j as 1 
   j <- 1
+  
+  # Fill model with all cells (gene_i across all cells/samples)
+  # Extract summary and save it
   resul0 <- summary(glm(y ~ ., data = d, family = family, epsilon = epsilon))$coefficients[, 4]
+  
+  print(resul0)
+  
+  stop()
+  
   d <- as.data.frame(d[, names(resul0)[-1]])
   for (i in 1:ncol(d)) {
     sub <- cbind(design, d[, i])
