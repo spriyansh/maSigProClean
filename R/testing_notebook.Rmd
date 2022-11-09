@@ -31,5 +31,5 @@ library(MASS)
 
 metagene.mtx <-abs(meta.mtx)
 
-fit <- p.vector(metagene.mtx, exp.design.matrix, Q = 0.05, MT.adjust = "BH", min.obs = 10, counts = T)
+fit <- p.vector(metagene.mtx, exp.design.matrix, Q = 0.05, MT.adjust = "BH", min.obs = 10, counts = T, family = negative.binomial(10))
 ```
