@@ -110,16 +110,26 @@ p.vector <- function(
     # ********************************************************************
 
     # Actual model fitting
-    model.glm <- glm(y ~ ., data = dis, family = family, epsilon = epsilon)
+    model.glm <- glm(y ~ ., # Formula all the coviarates
+                     data = dis,
+                     family = family, 
+                     epsilon = epsilon)
     
-    print(summary(model.glm))
-    stop()
+    # print(model.glm)
+    # print(model.glm$null.deviance)
     
     # Condition: 
     if (model.glm$null.deviance == 0) {
       p.vector[i] <- 1
     } else {
-      model.glm.0 <- glm(y ~ 1, family = family, epsilon = epsilon)
+      model.glm.0 <- glm(y ~ 1,# Formula with just intercept
+                         family = family,
+                         epsilon = epsilon
+                         )
+      
+      print(model.glm.0)
+      print(model.glm.0$null.deviance)
+      stop()
 
       if (family$family == "gaussian") {
         test <- anova(model.glm.0, model.glm, test = "F")
